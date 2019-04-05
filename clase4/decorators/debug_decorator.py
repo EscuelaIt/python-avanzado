@@ -6,18 +6,18 @@ def debug(function):
     @functools.wraps(function)
     def _debug(*args, **kwargs):
         output = function(*args, **kwargs)
-        print("debugger")
+        # print("debugger")
         print('%s(%r, %r): %r' % (function.__name__, args, kwargs, output))
         return output
     return _debug
 
 
 @debug
-def spam(eggs):
+def spam(eggs, name=''):
     return 'spam' * (eggs % 5)
 
 
-output = spam(3)
+output = spam(3, name='Escuela.it')
 print("output", output)
 
 

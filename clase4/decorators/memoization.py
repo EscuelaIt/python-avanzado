@@ -2,7 +2,7 @@ import functools
 from datetime import datetime
 
 
-FIBONACCI_RANGE = 40
+FIBONACCI_RANGE = 20
 
 
 def fibonacci(n):
@@ -40,7 +40,7 @@ def fibonacci(n):
 
 
 initial_time = datetime.now()
-for i in range(1, FIBONACCI_RANGE):
+for i in range(1, 100):
     print('fibonacci %d: %d' % (i, fibonacci(i)))
 end_time = datetime.now()
 print(end_time - initial_time)
@@ -67,5 +67,9 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
+print("LRU cache")
+initial_time = datetime.now()
 print(fibonacci(100))
+end_time = datetime.now()
+print(end_time - initial_time)
 print(fibonacci.__wrapped__.__wrapped__.calls)

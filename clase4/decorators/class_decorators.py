@@ -13,14 +13,26 @@ def singleton(cls):
 
 @singleton 
 class Spam(object):
+
     def __init__(self):
         print('Executing init')
+
+
+@singleton
+class Eggs:
+
+    def __init__(self):
+        print('Executing init Eggs')
 
 
 a = Spam() 
 b = Spam()
 
+c = Eggs()
+d = Eggs()
+
 print("a is b", a is b)
+print("c is d", c is d)
 
 a.x = 123
 print("b.x", b.x)

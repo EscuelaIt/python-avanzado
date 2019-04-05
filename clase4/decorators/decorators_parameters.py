@@ -9,6 +9,11 @@ def add(extra_n=1):
     # decorator
     def _add(function):
         # The actual function that will be called @functools.wraps(function)
+        print("extra_n >>>>>> ", extra_n)
+        if extra_n < 5:
+            # raise ValueError(f"This is not a valid extra_n \"{extra_n}\"")
+            return lambda x: "Not run"
+
         @functools.wraps(function)
         def __add(n):
             return function(n + extra_n)

@@ -8,4 +8,4 @@ g = generator()
 
 print(next(g))
 # Uncomment next line to see the error
-# print(next(g))
+print(next(g))

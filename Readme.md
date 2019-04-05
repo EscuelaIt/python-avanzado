@@ -13,3 +13,5 @@ Colecciones en Python
 Principios de programación funcional
 #### Clase 4
 Decoradores
+#### Clase 5
+Corutinas, AsyncIO, Metaclases

@@ -23,6 +23,8 @@ def spam_decorated():
     return "success!"
 
 
+print(spam_decorated())
+
 print()
 print(">>>>>>> Simple decorator <<<<<<<")
 print()
