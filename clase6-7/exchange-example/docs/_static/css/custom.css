@@ -1,0 +1,8 @@
+.rst-content dl:not(.docutils) dt:first-child {
+    margin-top: 0;
+    width: 100% !important;
+}
+
+.wy-side-nav-search{
+    background-color: #b90027;
+}
