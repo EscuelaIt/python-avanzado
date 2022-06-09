@@ -10,7 +10,7 @@ certifi==2019.3.9
 chardet==3.0.4
 Click==7.0
 commonmark==0.8.1
-cookiecutter==1.6.0
+cookiecutter==2.1.1
 coverage==4.5.3
 docutils==0.14
 entrypoints==0.3
